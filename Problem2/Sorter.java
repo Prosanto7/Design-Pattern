@@ -1,7 +1,5 @@
-package Problem2;
-
-
-public class Sorter 
-{
-	
+import java.util.Comparator;
+public abstract class Sorter {
+    public Comparator<Student> Comparator;
+    public Sorter insideSorter;
 }

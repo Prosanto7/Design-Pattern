@@ -1,50 +1,24 @@
-package Problem2;
+import java.util.Comparator;
 
-public class Student 
-{
-    private String name;
-    private int roll,age;
-    private double cgpa;
-    
-    public Student(String name,int roll,int age,double cgpa)
-    {
-    	this.setName(name);
-    	this.setRoll(roll);
-    	this.setAge(age);
-    	this.setCgpa(cgpa);
+public class Student {
+    public String name;
+    public int roll;
+    public int age;
+    public double cgpa;
+
+    public Student(String name, int roll, int age, double cgpa) {
+        this.name = name;
+        this.roll = roll;
+        this.age = age;
+        this.cgpa = cgpa;
     }
 
-	public String getName() {
-		return name;
-	}
+    public String toString () {
+        String str = "Name: " + this.name + " Roll: " + this.roll;
+        str = str + " Age: " + this.age + " CGPA: " + this.cgpa;
+        return str;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
 
-	public int getRoll() {
-		return roll;
-	}
 
-	public void setRoll(int roll) {
-		this.roll = roll;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public double getCgpa() {
-		return cgpa;
-	}
-
-	public void setCgpa(double cgpa) {
-		this.cgpa = cgpa;
-	}
-    
-    
 }
