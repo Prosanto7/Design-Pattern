@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class Main {
         studentList.add(s4);
         studentList.add(s5);
 
-        Collections.sort(studentList, new Sorter().rollGpaComparator);
+        //Collections.sort(studentList, new Sorter().rollGpaComparator);
         for (Student s: studentList) System.out.println(s);
     }
-}
+}*/

@@ -1,4 +1,4 @@
-import java.util.Comparator;
+/*import java.util.Comparator;
 
 public class RollSorter extends Sorter {
     public RollSorter(Sorter s) {
@@ -10,4 +10,4 @@ public class RollSorter extends Sorter {
             return s1.roll - s2.roll;
         }
     };
-}
+}*/
