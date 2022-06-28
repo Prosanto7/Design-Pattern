@@ -1,50 +1,36 @@
+
 package AbstractFactoryPattern;
 
 public abstract class Country {
-	public abstract String getCountryName();
-	public abstract double getImportCost();
-	
-	public String toString() {
-		return "Country Name : "+this.getCountryName()+"\nImport Cost : "+this.getImportCost();
-	}
+    public abstract String getName();
+    public abstract double getPrice();
+    
+    public String toString()
+    {
+        return "Country name :"+this.getName()+" Price: "+this.getPrice();
+    }
 }
 
-class Bangladesh extends Country {
-
-	@Override
-	public String getCountryName() {
-		return "Bangladesh";
-	}
-
-	@Override
-	public double getImportCost() {
-		return 1000.00;
-	}
+class BD extends Country {
+    @Override
+    public String getName() {
+        return "Bangladesh";
+    }
+    @Override
+    public double getPrice() {
+        return 12000.5;
+    }
 }
 
 class India extends Country {
-
-	@Override
-	public String getCountryName() {
-		return "India";
-	}
-
-	@Override
-	public double getImportCost() {
-		return 1500.00;
-	}
+    @Override
+    public String getName() {
+        return "India";
+        
+    }
+    @Override
+    public double getPrice() {
+        return 8000.5;
+        
+    }
 }
-
-class China extends Country {
-
-	@Override
-	public String getCountryName() {
-		return "China";
-	}
-
-	@Override
-	public double getImportCost() {
-		return 1800.00;
-	}
-}
-
