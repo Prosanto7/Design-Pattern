@@ -5,7 +5,7 @@ public class Main
 {
     public static void main(String[]args)
     {
-        Prototype p= new Prototype("01",1,4,category.grocery,color.blue);
+        Prototype p = new Prototype("01",1,4,category.grocery,color.blue);
         
         p.addItems(new type("joy",4));
         Prototype p1=p.clone();

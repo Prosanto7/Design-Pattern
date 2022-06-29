@@ -1,39 +1,23 @@
 
 package ChainOfResponsibilityPattern;
 
-public class CoachEmailProcessor extends EmailProcessor 
+public class CoachEmailProcessor implements EmailProcessor
 {
     EmailProcessor ep;
-    int chain =0;
-    CoachEmailProcessor(EmailProcessor ep)
-    {
-        this.ep=ep;
-        chain=1;
+    CoachEmailProcessor() {
     }
-    CoachEmailProcessor()
-    {
-        
+    CoachEmailProcessor(EmailProcessor ep) {
+        this.ep = ep;
     }
     
     @Override
-    public void processEmail(Email e) 
-    {
-        if(e.priority == 2)
-        {
+    public void processEmail(Email e) {
+        if(e.priority == Priority.Medium) {
             System.out.println("Email "+e.number+" is processes by coach");
-        }
-        else
-    {
-        if(chain == 1)
-        {
-        
-        
-        ep.processEmail(e);
-        }
-        else
-       {
-           System.out.println("Email "+e.number+" is not processes by captain");
+        } else if (ep != null) {
+            ep.processEmail(e);
+        } else {
+           System.out.println("Email "+e.number+" is not processes by coach");
        }
-    }
     }
 }

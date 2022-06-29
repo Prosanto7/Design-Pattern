@@ -5,22 +5,22 @@ public class CountryFactory extends AbstractFactory {
     @Override
     public Country createCountry(String str) 
     {
-        c=null;
+        c = null;
         
         if(str.equalsIgnoreCase("Bangladesh"))
         {
-            c= new BD();
+            c = new BD();
         }
         if(str.equalsIgnoreCase("India"))
         {
-            c=new India();
+            c = new India();
         }
         return c;
     }
 
     public Mobile createMobile(String str) 
     {
-        m=null;  
+        m = null;
         return m;
         
     }

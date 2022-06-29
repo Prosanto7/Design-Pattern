@@ -39,9 +39,9 @@ public class Prototype implements MakeClone
     }
 
     @Override
-    public Prototype clone() 
+    public Prototype clone ()
     {
-       Prototype p=new Prototype(this.Id,this.number,this.floor,this.category,this.color);
+       Prototype p = new Prototype(this.Id, this.number, this.floor, this.category, this.color);
        
        for(type e:items)
        {

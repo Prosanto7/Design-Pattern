@@ -1,43 +1,26 @@
 
 package ChainOfResponsibilityPattern;
 
-public class CaptainEmailProcessor extends EmailProcessor
+public class CaptainEmailProcessor implements EmailProcessor
 {
     EmailProcessor ep;
-    int chain=0;
-    CaptainEmailProcessor()
-    {
-        
+
+    CaptainEmailProcessor() {
     }
-    CaptainEmailProcessor(EmailProcessor ep)
-    {
-        this.ep=ep;
-        this.chain=1;
+    CaptainEmailProcessor(EmailProcessor ep) {
+        this.ep = ep;
     }
 
     @Override
     public void processEmail(Email e) 
     {
-        if(e.priority == 1)
-        {
+        if(e.priority == Priority.Low) {
             System.out.println("Email "+e.number+" is processes by captain");
-            
+        } else if (e != null) {
+            ep.processEmail(e);
+        } else {
+            System.out.println("Email is not processed");
         }
-       else
-    {
-       if(chain == 1)
-        {
-        
-        
-        ep.processEmail(e);
-        }
-       else
-       {
-           System.out.println("Email "+e.number+" is not processes by captain");
-       }
+
     }
-        
-        
-    }
-    
 }

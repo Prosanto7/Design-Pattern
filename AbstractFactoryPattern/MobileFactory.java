@@ -15,15 +15,15 @@ public class MobileFactory extends AbstractFactory {
 
     public Mobile createMobile(String str) 
     {
-        m=null;
+        m = null;
         
         if(str.equalsIgnoreCase("Iphone"))
         {
-            m= new iphone();
+            m = new iphone();
         }
         if(str.equalsIgnoreCase("Samsung"))
         {
-            m=new Samsung();
+            m = new Samsung();
         }
         return m;
         

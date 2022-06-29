@@ -1,25 +1,20 @@
 
 package ChainOfResponsibilityPattern;
 
-public class BoardEmailProcessor extends EmailProcessor
+public class BoardEmailProcessor implements EmailProcessor
 {
     EmailProcessor ep;
-    
-    BoardEmailProcessor(EmailProcessor ep)
-    {
-        this.ep=ep;
-        
+
+    BoardEmailProcessor() {
     }
-    BoardEmailProcessor()
-    {
-        
+    
+    BoardEmailProcessor(EmailProcessor ep) {
+        this.ep = ep;
     }
     @Override
     public void processEmail(Email e) 
     {
         System.out.println("Email "+e.number+" is processes by board");
-        
-        
     }
     
     

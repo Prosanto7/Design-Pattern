@@ -1,6 +1,6 @@
 package ChainOfResponsibilityPattern;
 
-public abstract class EmailProcessor 
+public interface EmailProcessor
 {
     public abstract void processEmail(Email e);
     
