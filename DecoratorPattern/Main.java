@@ -4,7 +4,7 @@ public class Main
 {
     public static void main(String[]args)
     {
-        Icecream obj= new wafer(new wafer(new Vanila()));
+        IceCream obj= new Wafer(new Wafer(new Vanila()));
         System.out.println(obj.prepare());
         System.out.println(obj.getPrice());
         

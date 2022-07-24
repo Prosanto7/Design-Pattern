@@ -1,10 +1,6 @@
 
 package BridgePattern;
 
-/**
- *
- * @author Lenovo-PC
- */
 public class Main 
 {
     public static void main(String[]args)

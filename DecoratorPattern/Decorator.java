@@ -1,9 +1,9 @@
 package DecoratorPattern;
 
-public abstract class Decorator implements Icecream
+public abstract class Decorator implements IceCream
 {
-    private Icecream icecream;
-    Decorator(Icecream icecream)
+    private IceCream icecream;
+    Decorator(IceCream icecream)
     {
         this.icecream=icecream;
         
@@ -19,10 +19,10 @@ public abstract class Decorator implements Icecream
         return icecream.getPrice();
     }
 }
-class wafer extends Decorator
+class Wafer extends Decorator
 {
 
-    public wafer(Icecream icecream) {
+    public Wafer(IceCream icecream) {
         super(icecream);
     }
     

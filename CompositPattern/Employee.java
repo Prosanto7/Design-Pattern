@@ -22,9 +22,6 @@ public abstract class Employee
         System.out.println("Id: "+this.id+"   Name: "+this.name+"   salary: "+this.getSalary());
     }
     public abstract int getSalary();
-
-  
-    
 }
 
 class seventhGradeemployee extends Employee

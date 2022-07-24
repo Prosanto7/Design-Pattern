@@ -1,9 +1,7 @@
 package DecoratorPattern;
 
-public interface Icecream 
+public interface IceCream
 {
   public int getPrice();
   public String prepare();
- 
-  
 }
