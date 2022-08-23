@@ -1,40 +1,52 @@
 package DecoratorPattern;
 
-public abstract class Decorator implements IceCream
-{
-    private IceCream icecream;
-    Decorator(IceCream icecream)
-    {
-        this.icecream=icecream;
-        
-    }
-   
-    public  String prepare()
-    {
-        return icecream.prepare();
-    }
+public abstract class Decorator implements IceCream{
+    IceCream iceCream;
     
-    public  int getPrice()
-    {
-        return icecream.getPrice();
+    Decorator(IceCream iceCream) {
+        this.iceCream = iceCream;
+    }
+
+    public int getPrice() {
+        return iceCream.getPrice();
+    }
+
+    public String prepare() {
+        return iceCream.prepare();
     }
 }
-class Wafer extends Decorator
-{
 
-    public Wafer(IceCream icecream) {
-        super(icecream);
+class Wafer extends Decorator {
+
+    Wafer(IceCream iceCream) {
+        super(iceCream);
     }
-    
+    @Override
+    public int getPrice() {
+        return super.getPrice() + 150;
+    }
+
     @Override
     public String prepare() {
-        return super.prepare()+" wafer";
+        return super.prepare() + " Wafer ";
+    }
+}
+
+
+class Chocolate extends Decorator {
+
+    Chocolate(IceCream iceCream) {
+        super(iceCream);
     }
 
     @Override
     public int getPrice() {
-        return super.getPrice()+50;
+        return super.getPrice() + 350;
     }
 
-   
+    @Override
+    public String prepare() {
+        return super.prepare() + " Chocolate ";
+    }
 }
+

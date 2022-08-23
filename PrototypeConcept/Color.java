@@ -1,4 +1,4 @@
-package Revision;
+package PrototypeConcept;
 
 public enum Color {
 	Blue,

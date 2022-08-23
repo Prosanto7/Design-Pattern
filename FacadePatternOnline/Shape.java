@@ -1,4 +1,4 @@
-package FacadeP;
+package FacadePatternOnline;
 
 public interface Shape {
     public void draw();

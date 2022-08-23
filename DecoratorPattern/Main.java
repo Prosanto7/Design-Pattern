@@ -1,13 +1,9 @@
 package DecoratorPattern;
 
-public class Main 
-{
-    public static void main(String[]args)
-    {
-        IceCream obj= new Wafer(new Wafer(new Vanila()));
-        System.out.println(obj.prepare());
-        System.out.println(obj.getPrice());
-        
+public class Main {
+    public static void main(String[] args) {
+        Decorator iceCream = new Chocolate(new Wafer(new Vanilla()));
+        System.out.println(iceCream.getPrice());
+        System.out.println(iceCream.prepare());
     }
-    
 }

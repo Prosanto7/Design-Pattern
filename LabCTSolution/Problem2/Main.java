@@ -1,4 +1,4 @@
-package Problem2;
+package LabCTSolution.Problem2;
 
 public class Main {
     public static void main(String[] args) {

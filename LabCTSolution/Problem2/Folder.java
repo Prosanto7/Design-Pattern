@@ -1,4 +1,4 @@
-package Problem2;
+package LabCTSolution.Problem2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,22 +16,15 @@ public class Folder extends Element
 
     @Override
     Folder copy() {
-        Folder folder = new Folder(getName());
-
-        List folderList = new ArrayList<>();
-        List fileList = new ArrayList<>();
-
-        for(Folder fold : this.folderList) {
-            folderList.add(fold);
+        Folder copyFolder = new Folder(this.getName());
+        for(Folder folder : this.folderList) {
+            copyFolder.getFolderList().add(folder.copy());
         }
 
         for(File f : this.fileList) {
-            fileList.add(f);
+            copyFolder.getFileList().add(f.copy());
         }
-        
-        folder.folderList = folderList;
-        folder.fileList = fileList;
-        return folder;
+        return copyFolder;
     }
 
     @Override
@@ -51,6 +44,11 @@ public class Folder extends Element
         return getName()+folderList+fileList;
     }
 
+    public List<File> getFileList() {
+        return fileList;
+    }
 
-
+    public List<Folder> getFolderList() {
+        return folderList;
+    }
 }

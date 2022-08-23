@@ -1,4 +1,4 @@
-package FacadeP;
+package FacadePatternOnline;
 
 public class ShapeMaker {
     private Shape circle;

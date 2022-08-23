@@ -1,4 +1,4 @@
-package Revision;
+package PrototypeConcept;
 
 public class Main {
 	public static void main(String[] args) {

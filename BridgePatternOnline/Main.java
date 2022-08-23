@@ -1,4 +1,4 @@
-package BridgeP;
+package BridgePatternOnline;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,5 +10,8 @@ public class Main {
 
         Shape blueRectangle = new Rectangle (new Blue());
         blueRectangle.drawShape();
+
+        Shape greenRectangle = new Rectangle(new Green());
+        greenRectangle.drawShape();
     }
 }

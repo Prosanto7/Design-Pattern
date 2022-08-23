@@ -1,4 +1,4 @@
-package Revision;
+package PrototypeConcept;
 
 public class Item implements CopyShop{
 	private String name;

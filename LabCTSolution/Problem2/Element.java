@@ -1,6 +1,7 @@
-package Problem2;
+package LabCTSolution.Problem2;
 
 public abstract class Element {
+
     private String name;
 
     public Element(String name) {
@@ -16,5 +17,6 @@ public abstract class Element {
     }
 
     abstract Element copy();
+
     abstract void rename(String newName);
 }

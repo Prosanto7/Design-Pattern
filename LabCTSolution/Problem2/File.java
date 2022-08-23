@@ -1,4 +1,4 @@
-package Problem2;
+package LabCTSolution.Problem2;
 
 public class File extends Element{
 
@@ -8,8 +8,7 @@ public class File extends Element{
 
     @Override
     File copy() {
-        File file = new File(getName());
-        return file;
+        return new File(getName());
     }
 
     @Override

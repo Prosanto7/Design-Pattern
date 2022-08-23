@@ -1,4 +1,4 @@
-package BridgeP;
+package BridgePatternOnline;
 
 public abstract class Shape {
 

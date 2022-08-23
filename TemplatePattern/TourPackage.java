@@ -11,7 +11,6 @@ public abstract class TourPackage {
 		accomodation();
 		foodFacility();
 	}
-	
 	protected abstract void transport();
 	protected abstract void accomodation();
 	protected abstract void foodFacility();
