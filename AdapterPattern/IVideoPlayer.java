@@ -1,8 +1,8 @@
 package AdapterPattern;
 
 public interface IVideoPlayer {
-	public void playAudio(String filename);
-	public void playVideo(String filename);
+	void playAudio(String filename);
+	void playVideo(String filename);
 }
 
 class AudioPlayerAdapter implements IVideoPlayer {
